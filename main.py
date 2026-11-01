@@ -41,7 +41,7 @@ def init_db():
                 count INTEGER DEFAULT 3
             )
         """)
-        c.execute("INSERT OR IGNORE INTO lives (id, count) VALUES (1, 3)")
+        c.execute("INSERT OR IGNORE INTO lives (id, count) VALUES (1, 2)")
         c.commit()
 
 def get_progress() -> dict:
